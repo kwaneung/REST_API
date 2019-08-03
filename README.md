@@ -1,2 +1,2 @@
 # REST_API
- reat_api
+Node.js 기반의 REST API 서버 개발
