@@ -1,0 +1,1 @@
+- pakage.json에서 dependencies는 서비스가 돌아갈 때 필요한 모듈이고 devDependencies는 개발환경에서 필요한 모듈
