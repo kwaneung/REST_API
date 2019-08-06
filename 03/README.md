@@ -9,3 +9,7 @@
     - 404: 찾을 수 없음
     - 409: 충돌
     - 500: 서버에러
+
+- uri를 /get_users /create_users가아니라 GET /users, POST /users 이런식으로 한다
+
+- npm init npm 명령어를통해 여러 스크립트 사용 
