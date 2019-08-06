@@ -9,7 +9,11 @@ describe('GET /users', () => {
         request(app)
             .get('/users')
             .end((err, res) => {
-                console.log(res.body)
+                // console.log(res.body)
+                res.body.should.be.instanceof(Array)
+                res.body.forEach(users => {
+                    users.should.have.property('name')
+                });
                 done()
             });
     })
