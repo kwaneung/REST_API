@@ -4,5 +4,6 @@
 
 - should는 검증 라이브러리다. 가독성 높은 테스트 코드를 만들 수 있다.
 
+- supertest : 익스프레스 통합 테스트용 라이브러리
 
-(설치 라이브러리 : express, mogan, mocha --save-dev, should --save-dev)
+(설치 라이브러리 : express, mogan, mocha --save-dev, should --save-dev, supertest --save-dev)
