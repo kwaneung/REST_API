@@ -7,3 +7,10 @@
 - supertest : 익스프레스 통합 테스트용 라이브러리
 
 (설치 라이브러리 : express, mogan, mocha --save-dev, should --save-dev, supertest --save-dev)
+
+- 데이터 전달방법
+  1. url에 ?limit=2 파라미터 -> req.query.limit로 받음
+  2. url에 /:id 파라미터 -> req.params.id로 받음
+  3. body 파라미터(post, put) -> req.body.name
+  
+(설치 라이브러리 : npm i body-parser --save)
