@@ -17,4 +17,4 @@ app.delete('/users', (req, res) => res.json(users))
 
 // app.listen(3000, () => console.log('running'))
 
-module.exports = app
+module.exports = app  // app을 외부에서도 볼 수 있도록
