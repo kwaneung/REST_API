@@ -1,7 +1,7 @@
 const assert = require('assert')
 const should = require('should')
 const request = require('supertest')
-const app = require('./index')  // index.js에 있는 app을 모듈형식으로 가져옴
+const app = require('../../index')  // index.js에 있는 app을 모듈형식으로 가져옴
 
 //defcribe()는 테스트suite 생성
 //1파라미터는 뭘 테스트할지, 2파라미터는 콜백함수
