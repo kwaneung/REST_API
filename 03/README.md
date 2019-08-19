@@ -17,3 +17,13 @@
 
 - curl 명령어 옵션 :  -x (GET, POST, DELETE, PUT)
   (https://bakyeono.net/post/2016-05-02-rest-api-client-for-cli.html#%EC%9A%94%EC%B2%AD-%EB%B3%B4%EB%82%B4%EA%B8%B0)
+  
+- ORM(Object Relational Mapping)
+
+  데이터베이스를 객체로 추상화해 놓은것
+
+  쿼리를 직접 작성하는 대신 ORM의 메소드로 데이터 관리 가능
+
+  노드에서 SQL ORM은 시퀄라이저(Sequelize)가 있다
+
+  DBtest.js파일에 예제있으니 이용후 추가 바람
