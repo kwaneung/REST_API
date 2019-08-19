@@ -2,6 +2,7 @@ const assert = require('assert')
 const should = require('should')
 const request = require('supertest')
 const app = require('../../index')  // index.js에 있는 app을 모듈형식으로 가져옴
+const models = require('../../models');
 
 //defcribe()는 테스트suite 생성
 //1파라미터는 뭘 테스트할지, 2파라미터는 콜백함수
@@ -123,3 +124,50 @@ describe('POST /users', () => {
         })
     })
 })
+// describe('PUT /users/:id', ()=>{
+//     const users = [{name: 'alice'}, {name: 'bek'}, {name: 'chris'}];
+//     before(()=>models.sequelize.sync({force: true}));
+//     before(()=> models.User.bulkCreate(users));
+    
+//     describe('성공시', ()=> {
+//       it('변경된 name을 응답한다', (done)=> {
+//         const name = 'chally';
+//         request(app)
+//             .put('/users/3')
+//             .send({name})
+//             .end((err, res) =>{
+//               res.body.should.have.property('name', name);
+//               done();
+//             });
+//       })
+//     });
+//     describe('실패시', ()=>{
+//       it('정수가 아닌 id일 경우 400을 응답한다', done=>{
+//         request(app)
+//             .put('/users/one')
+//             .expect(400)
+//             .end(done);
+//       });
+//       it('name이 없을 경우 400을 응답한다', done=>{
+//         request(app)
+//             .put('/users/1')
+//             .send({})
+//             .expect(400)
+//             .end(done);
+//       });
+//       it('없는 유저일 경우 404을 응답한다', done=>{
+//         request(app)
+//             .put('/users/999')
+//             .send({name: 'foo'})
+//             .expect(404)
+//             .end(done);
+//       });
+//       it('이름이 중복일 경우 409을 응답한다', done=>{
+//         request(app)
+//             .put('/users/3')
+//             .send({name: 'bek'})
+//             .expect(409)
+//             .end(done);
+//       })
+//     })
+//   })

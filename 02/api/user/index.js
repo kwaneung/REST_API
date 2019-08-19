@@ -7,6 +7,6 @@ router.get('/', ctrl.index)  // ctrl의 index함수 바인딩
 router.get('/:id', ctrl.show)
 router.delete('/:id', ctrl.destroy)
 router.post('/', ctrl.create)
-// app.get('/users', (req, res) => res.json(users))
+// router.put('/:id',ctrl.update);
 
 module.exports = router
