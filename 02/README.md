@@ -14,3 +14,5 @@
   3. body 파라미터(post, put) -> req.body.name
   
 (설치 라이브러리 : npm i body-parser --save)
+
+- curl 명령어 옵션 :  -x (GET, POST, DELETE, PUT)
